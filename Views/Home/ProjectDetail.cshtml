@@ -1,0 +1,198 @@
+﻿@model DetailModel
+@{
+    ViewData["Title"] = "ProjectDetail";
+}
+@section Scripts{
+    <script src="~/dist/project-detail.bundler.js"></script>
+}
+
+<div id="detail">
+    @Html.Hidden("project-type", Model.Project_Type)
+    <div class="section" id="section-header-image">
+        <div class="col-12 layer text-center text-header-contain animated slideInDown">
+            <span class="text-light text-uppercase header-text-center">ĐÔ THỊ KIỂU MẪU</span><br />
+            <span class="text-light text-uppercase header-text-center">NƠI AN CƯ LÝ TƯỞNG</span>
+        </div>
+    </div>
+    <div class="section fp-auto-height" id="section-short-content">
+        <div class="height-800">
+            <div class="row col-12 top-block text-top">
+                <div class="col-12 text-center top-block-title">
+                    <h1 class="text-uppercase font-title">VỊ TRÍ ĐỊA CHÍNH TRỊ - KINH TẾ - VĂN HÓA</h1>
+                </div>
+                <div class="col-12 text-center mt-5 top-block-content">
+                    <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </span>
+                </div>
+            </div>
+            <div class="row col-12 mt-5 content-block desktop-hide">
+                <div class="col-5 text-contain offset-sm-1" style="margin-top:5%">
+                    <div class="row col-12">
+                        <div class="col-10 offset-sm-2 text-left mt-5">
+                            <h1 class="text-uppercase font-title">GIAO THÔNG THUẬN TIỆN</h1>
+                        </div>
+                        <div class="col-10 offset-sm-2 text-left mt-5">
+                            <span>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                            </span><br />
+                            <span>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                            </span>
+                        </div>
+                        @*<div class="col-10 offset-sm-2 text-left pt-5">
+                        <a class="btn btn-lg btn-detail text-uppercase font-weight-bold" style="font-size:0.9rem">THÊM THÔNG TIN <i class="fas fa-long-arrow-alt-right fa-lg animated slideInLeft"></i></a>
+                    </div>*@
+                    </div>
+                </div>
+                <div class="col-5 img-contain text-center">
+                    <img src="~/images/giao-thong-thuan-tien-square.jpg" />
+                </div>
+            </div>
+            <div class="row col-12 mt-5 content-block mobile-content-hide">
+                <div class="col-12 text-center">
+                    <img src="~/images/giao-thong-thuan-tien.jpg" />
+                </div>
+                <div class="col-12 text-contain">
+                    <div class="row col-12">
+                        <div class="col-12 text-center mt-5">
+                            <h1 class="text-uppercase font-title">GIAO THÔNG THUẬN TIỆN</h1>
+                        </div>
+                        <div class="col-12 text-center mt-5">
+                            <span>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                            </span><br />
+                            <span>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                            </span>
+                        </div>
+                        @*<div class="col-10 offset-sm-2 text-left pt-5">
+                    <a class="btn btn-lg btn-detail text-uppercase font-weight-bold" style="font-size:0.9rem">THÊM THÔNG TIN <i class="fas fa-long-arrow-alt-right fa-lg animated slideInLeft"></i></a>
+                </div>*@
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="section fp-auto-height" id="section-short-content-middle">
+        <div class="height-800">
+            <div class="row col-12 mt-5 content-block desktop-hide">
+                <div class="col-5 offset-sm-1 img-contain text-center">
+                    <img src="~/images/tien-ich-square.jpg" />
+                </div>
+                <div class="col-5 text-contain" style="margin-top:5%">
+                    <div class="row col-12">
+                        <div class="col-10 offset-sm-1 text-left mt-5">
+                            <h1 class="text-uppercase font-title">DỊCH VỤ - TIỆN ÍCH ĐỒNG BỘ</h1>
+                        </div>
+                        <div class="col-10 offset-sm-1 text-left mt-5">
+                            <span>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                            </span><br />
+                            <span>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                            </span>
+                        </div>
+                        @*<div class="col-10 offset-sm-1 text-left pt-5">
+                        <a class="btn btn-lg btn-detail text-uppercase font-weight-bold" style="font-size:0.9rem">THÊM THÔNG TIN <i class="fas fa-long-arrow-alt-right fa-lg animated slideInLeft"></i></a>
+                    </div>*@
+                    </div>
+                </div>
+            </div>
+            <div class="row col-12 mt-5 content-block mobile-content-hide">
+                <div class="col-12 text-center">
+                    <img src="~/images/dich-vu-tien-ich-dong-bo.jpg" />
+                </div>
+                <div class="col-12 text-contain">
+                    <div class="row col-12">
+                        <div class="col-12 text-center mt-5">
+                            <h1 class="text-uppercase font-title">DỊCH VỤ - TIỆN ÍCH ĐỒNG BỘ</h1>
+                        </div>
+                        <div class="col-12 text-center mt-5">
+                            <span>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                            </span><br />
+                            <span>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                            </span>
+                        </div>
+                        @*<div class="col-10 offset-sm-1 text-left pt-5">
+                        <a class="btn btn-lg btn-detail text-uppercase font-weight-bold" style="font-size:0.9rem">THÊM THÔNG TIN <i class="fas fa-long-arrow-alt-right fa-lg animated slideInLeft"></i></a>
+                    </div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-auto-height" id="section-short-content-bottom">
+        <div class="height-800">
+            <div class="row col-12 mt-5 content-block desktop-hide">
+                <div class="col-5 text-contain offset-sm-1" style="margin-top:5%">
+                    <div class="row col-12">
+                        <div class="col-10 offset-sm-2 text-left mt-5">
+                            <h1 class="text-uppercase font-title">NƠI SINH SỐNG AN LÀNH</h1>
+                        </div>
+                        <div class="col-10 offset-sm-2 text-left mt-5">
+                            <span>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                            </span><br />
+                            <span>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                            </span>
+                        </div>
+                        @*<div class="col-10 offset-sm-2 text-left pt-5">
+                        <a class="btn btn-lg btn-detail text-uppercase font-weight-bold" style="font-size:0.9rem">THÊM THÔNG TIN <i class="fas fa-long-arrow-alt-right fa-lg animated slideInLeft"></i></a>
+                    </div>*@
+                    </div>
+                </div>
+                <div class="col-5 img-contain text-center">
+                    <img src="~/images/noi-sinh-song-an-lanh-square.jpg" />
+                </div>
+            </div>
+            <div class="row col-12 content-block mobile-content-hide">
+                <div class="col-12 text-center">
+                    <img src="~/images/noi-sinh-song-an-lanh.jpg" />
+                </div>
+                <div class="col-12 text-contain">
+                    <div class="row col-12">
+                        <div class="col-12 text-center mt-5">
+                            <h1 class="text-uppercase font-title">NƠI SINH SỐNG AN LÀNH</h1>
+                        </div>
+                        <div class="col-12 text-center mt-5">
+                            <span>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                            </span><br />
+                            <span>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                            </span>
+                        </div>
+                        @*<div class="col-10 offset-sm-2 text-left pt-5">
+                    <a class="btn btn-lg btn-detail text-uppercase font-weight-bold" style="font-size:0.9rem">THÊM THÔNG TIN <i class="fas fa-long-arrow-alt-right fa-lg animated slideInLeft"></i></a>
+                </div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-auto-height" id="section-detail-gallery">
+        <div class="height-600">
+            <div class="col-12 slick-contain center slider" style="height: 100%">
+                <div id="slide-1">
+                    <img src="~/images/dich-vu-tien-ich-dong-bo.jpg" />
+                </div>
+                <div id="slide-3">
+                    <img src="~/images/noi-sinh-song-an-lanh.jpg" />
+                </div>
+                <div id="slide-2">
+                    <img src="~/images/biet-thu.jpg" />
+                </div>
+                <div id="slide-4">
+                    <img src="~/images/tiem-nang-dau-tu.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <partial name="_Contact" />
+    <div class="row col-12 text-right back-to-top justify-content-end btn-back-to-top">
+        <a class="btn" id="btnBackTop"> <i class="fas fa-arrow-circle-up fa-3x text-white"></i></a>
+    </div>
+</div>

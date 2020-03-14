@@ -1,0 +1,255 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section Scripts{
+    <script src="~/dist/home.bundler.js"></script>
+    <script>
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $('.preloader').fadeOut('slow');
+            }, 1000);
+        });
+    </script>
+}
+
+<div id="fullpage">
+    <div class="section" id="section-home">
+        <video id="myVideo" loop muted data-autoplay>
+            <source src="~/images/test-video.mp4" type="video/mp4">
+        </video>
+        <div class="col-12 layer text-center text-header-contain animated slideInDown">
+            <span class="text-light text-uppercase header-text-center">CHÍ LINH PALM CITY</span><br />
+            <span class="text-light text-uppercase header-text-center">THÀNH PHỐ CÂY CỌ</span><br />
+
+            <div class="header-text-center">
+                <a class="btn btn-lg btn-detail text-white text-uppercase font-weight-bold" href="http://localhost:5000/home/detail/villa" style="font-size:1.2rem; border: solid 1px;">THÊM THÔNG TIN</a>
+                @*<a class="btn btn-lg btn-detail text-white text-uppercase font-weight-bold" href="https://chilinhpalm.azurewebsites.net/home/detail/villa" style="font-size:1.2rem; border: solid 1px;">THÊM THÔNG TIN</a>*@
+            </div>
+        </div>
+        <a href="#intro" class="dd-scroll-btn"><span></span><span></span><span></span></a>
+    </div>
+    <div class="section animated" id="section-intro">
+        <div class="card col-12 text-center intro-content fixed-bottom">
+            <div class="card-body cl-mobile-hide">
+                <div class="col-12 pb-5 animated fadeInDown" id="general-tab">
+                    <div class="col-12 text-left animated fadeInDown content-scroll">
+                        <span class="text-white">
+                            Khu đô thị  Chí Linh Palm City có vị trí đắc địa khi nằm tại trung tâm thành phố Chí Linh, nằm giữa trục giao thông QL37 đang được nhà nước đầu tư mạnh mẽ, là điểm vào các khu di tích lớn như Côn Sơn – Kiếp Bạc, đền Chu Văn An, Lục Đầu Giang… Với vị trí KIM CƯƠNG còn sót lại tại thành phố Chí Linh thì khu đô thị Trường Linh sẽ phát huy tối đa vị thế và tiềm năng là hạt nhân trong tam giác kinh tế Hà Nội – Hải Phòng – Quảng Ninh, điểm kết nối quan trọng trên chuỗi đô thị Bắc Ninh – Chí Linh – Đông Triều – Mạo Khê – Uông Bí – Hạ Long.
+                        </span><br /><br />
+                        <span class="text-white">
+                            Thành phố Chí Linh đang có nhiều lợi thế như hệ thống giao thông thuận lợi, khu công nghiệp Cộng Hòa, các điểm cụm công nghiệp Tân Dân, Văn An, Phả Lại…
+                        </span><br /><br />
+                        <span class="text-white">
+                            Tuyến đường tránh nối quốc lộ 18 và quốc lộ 37 cùng với hầm chui đường sắt sẽ tạo nên cấu trúc giao thông đô thị Chí Linh hoàn toàn mới. Dự án Chí Linh Palm City không chỉ nâng cao an toàn, hiệu quả kết nối giao thông mà còn góp phần mở rộng không gian đô thị, thúc đẩy phát triển kinh tế – xã hội rất lớn.
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 animated fadeInDown pb-5" id="investment-tab" hidden="hidden">
+                    <div class="col-12 text-left content-scroll">
+                        <span class="text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </span><br /><br />
+                        <span class="text-white">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source
+                        </span><br /><br />
+                        <span class="text-white">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 animated fadeInDown pb-5" id="company-tab" hidden="hidden">
+                    <div class="col-12 text-left content-scroll">
+                        <span class="text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </span><br /><br />
+                        <span class="text-white">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source
+                        </span><br /><br />
+                        <span class="text-white">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                        </span>
+                    </div>
+                </div>
+                <a href="#" class="card-link pr-4 text-white text-uppercase font-weight-bold link-underline" id="link-general-intro" style="font-size:16px;">Tổng quan</a>
+                <a href="#" class="card-link pr-4 text-white text-uppercase" id="link-investment-intro" style="font-size:16px;">Tiềm năng đầu tư</a>
+                <a href="#" class="card-link pr-4 text-white text-uppercase" id="link-company-intro" style="font-size:16px;">Về công ty</a>
+            </div>
+            <div class="card-body cl-desktop-hide">
+                <div class="section">Some section</div>
+                <div class="section">Some section</div>
+                <div class="section">Some section</div>
+                <div class="section">Some section</div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-map-location">
+        <div class="row h-100 align-items-center">
+            <img src="~/images/default-map.jpg" />
+        </div>
+        <div class="row col-12 map-menu-contain">
+            <div class="col-4 mobile-map-menu" style="z-index:6">
+                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="hospital" href="#">BỆNH VIỆN</a></div>
+                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="school" href="#">TRƯỜNG HỌC</a></div>
+                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="parking" href="#">BÃI ĐỖ XE</a></div>
+                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="stadium" href="#">SÂN VẬN ĐỘNG</a></div>
+                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="public" href="#">CÔNG TRÌNH CÔNG CỘNG</a></div>
+                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="culture" href="#">CÔNG TRÌNH VĂN HÓA</a></div>
+                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="hotel" href="#">KHÁCH SẠN</a></div>
+                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="park" href="#">CÔNG VIÊN CÂY XANH</a></div>
+                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="land" href="#">ĐẤT PHÂN LÔ</a></div>
+                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="shop-house" href="#">SHOP HOUSE</a></div>
+                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="services" href="#">DỊCH VỤ</a></div>
+                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="coffee" href="#">COFFEE</a></div>
+            </div>
+            <div class="col-2 desktop-map-menu" id="project-menu" style="z-index:6; left: 5%">
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="hospital" href="#">BỆNH VIỆN</a></li>
+                        <li class="list-group-item"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="school" href="#">TRƯỜNG HỌC</a></li>
+                        <li class="list-group-item"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="parking" href="#">BÃI ĐỖ XE</a></li>
+                        <li class="list-group-item"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="stadium" href="#">SÂN VẬN ĐỘNG</a></li>
+                        <li class="list-group-item"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="public" href="#">CÔNG TRÌNH CÔNG CỘNG</a></li>
+                        <li class="list-group-item"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="culture" href="#">CÔNG TRÌNH VĂN HÓA</a></li>
+                        <li class="list-group-item"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="hotel" href="#">KHÁCH SẠN</a></li>
+                        <li class="list-group-item"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="park" href="#">CÔNG VIÊN CÂY XANH</a></li>
+                        <li class="list-group-item"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="land" href="#">ĐẤT PHÂN LÔ</a></li>
+                        <li class="list-group-item"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="shop-house" href="#">SHOP HOUSE</a></li>
+                        <li class="list-group-item"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="services" href="#">DỊCH VỤ</a></li>
+                        <li class="list-group-item"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="coffee" href="#">COFFEE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="btn-animation" class="col-4">
+                <a class="btn btn-lg" id="btn-more-info"><i class="fas fa-chevron-right fa-3x"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-project">
+        <div class="card col-12 text-center nav-project fixed-bottom">
+            <div class="card-body">
+                <div class="col-12 text-center navbar-contain">
+                    <nav class="nav justify-content-center nav-custom">
+                        <a class="nav-link active js-nav-project" data-id="villa" href="#">BIỆT THỰ</a>
+                        <a class="nav-link js-nav-project" data-id="townhouse" href="#">NHÀ LIỀN KỀ</a>
+                        <a class="nav-link js-nav-project" data-id="shophouse" href="#">SHOPHOUSE</a>
+                        <a class="nav-link js-nav-project" data-id="hotel" href="#">KHÁCH SẠN</a>
+                        <a class="nav-link js-nav-project" data-id="cafe" href="#">PALM CAFE</a>
+                    </nav>
+                </div>
+                <div class="col-12 text-center mt-5 short-descriptions">
+                    <span class="text-dark" id="short-description">
+                        Tuyến đường tránh nối quốc lộ 18 và quốc lộ 37 cùng với hầm chui đường sắt sẽ tạo nên cấu trúc giao thông đô thị Chí Linh hoàn toàn mới. Dự án Chí Linh Palm City không chỉ nâng cao an toàn, hiệu quả kết nối giao thông mà còn góp phần mở rộng không gian đô thị, thúc đẩy phát triển kinh tế – xã hội rất lớn.
+                    </span>
+                    <br />
+                    @Html.Hidden("detail-link", "home/detail/")
+                </div>
+                <div class="col-12 text-center view-detail">
+                    <a class="font-weight-bold pt-5" href="home/detail/villa" id="btn-view-detail">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-gallery">
+        <div class="col-12 layer text-center text-header-contain animated slideInDown">
+            <span class="text-light text-uppercase header-text-center text-dark">THƯ VIỆN ẢNH</span>
+        </div>
+        <div class="col-12 slick-contain center slider" style="top:25%;position:absolute;">
+            <div id="slide-1">
+                <img src="~/images/dich-vu-tien-ich-dong-bo.jpg" />
+            </div>
+            <div id="slide-3">
+                <img src="~/images/noi-sinh-song-an-lanh.jpg" />
+            </div>
+            <div id="slide-2">
+                <img src="~/images/biet-thu.jpg" />
+            </div>
+            <div id="slide-4">
+                <img src="~/images/tiem-nang-dau-tu.jpg" />
+            </div>
+        </div>
+    </div>
+    <partial name="_Contact" />
+</div>
+<div class="row col-12 text-right back-to-top justify-content-end btn-back-to-top cl-mobile-hide">
+    <a class="btn" id="btnBackTop"> <i class="fas fa-arrow-circle-up fa-3x text-white"></i></a>
+</div>
+<div class="card card-responsive" id="more-info" hidden="hidden" style="display:block;position:absolute; top:1%; margin: 80px">
+    <div class="card-header container-fluid">
+        <div class="row col-12" style="padding-right: 0 !important;">
+            <div class="col-10">
+                <h1 class="text-uppercase">Các tiện ích đẳng cấp</h1>
+            </div>
+            <div class="col-2 text-right" style="padding-right: 0 !important;">
+                <a id="btn-close" style="cursor: pointer"><i class="fas fa-times"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="card-body">
+        <div class="col-12 row w-100">
+            <div class="col-4 text-top-20">
+                <span>
+                    Chí Linh Palm City được giới thượng lưu lựa chọn ngoài thế đất Địa Linh Nhân Kiệt là nhờ hệ thống các tiện ích cảnh quan đẳng cấp mà cư dân được đặc quyền sử dụng.
+                </span><br /><br />
+                <span>
+                    01. Tiểu cảnh lối vào công viên <br />
+                    02. Sân tập Golf mini <br />
+                    03. Khu thể thao Sân vận động <br />
+                    04. Sân chơi liên hoàn cho trẻ con <br />
+                    05. Tiểu cảnh <br />
+                    06. Công viên thám hiểm <br />
+                    07. Chòi ăn sang với các món đặc sản HN <br />
+                    08. Đường dạo ven hồ <br />
+                    09. Bến thuyền <br />
+                    10. Vườn dưỡng sinh <br />
+                    11. Sân trượt ván <br />
+                    12. Quảng trường trung tâm hướng hồ <br />
+                    13. Vườn tiểu cảnh <br />
+                </span>
+            </div>
+            <div class="col-4 text-top-20">
+                <span>
+                    14. Nhà gỗ cho trẻ <br />
+                    15. Công viên thú cưng <br />
+                    16. Lối vào chính <br />
+                    17. Đảo đọc sách <br />
+                    18. Đường thể thao ven hồ <br />
+                    19. Vườn điêu khắc tượng <br />
+                    20. Bênh viện Tư nhân<br />
+                    21. Vườn cờ<br />
+                    22. Nhà hàng<br />
+                    23. Bãi cỏ đa năng<br />
+                    24. Sân tập thể thao ngoài trời<br />
+                    25. Đài phun nước, điểm ngắm cảnh<br />
+                    26. Bãi đỗ xe<br />
+                    27. Sân chơi nước tương tác<br />
+                    28. Vườn phong cách Châu Âu<br />
+                    29. Chòi nghỉ chân ngắm hồ<br />
+                    30. Khách sạn 5*<br />
+                    31. Bể bơi 4 mùa.<br />
+                </span>
+            </div>
+            <div class="col-4 text-top-20">
+                <span>
+                    32. Bể bơi ngoài trời<br />
+                    34. Salon chăm sóc xe hơi<br />
+                    35. Trường Mầm non quốc tế<br />
+                    36. Trường THCS quốc tế<br />
+                    37. Trung tâm tổ chức sự kiện<br />
+                    26. Bãi đỗ xe<br />
+                    27. Sân chơi nước tương tác<br />
+                    28. Vườn phong cách Châu Âu<br />
+                    29. Chòi nghỉ chân ngắm hồ<br />
+                    30. Khách sạn 5*<br />
+                    31. Bể bơi 4 mùa.<br />
+                    32. Bể bơi ngoài trời<br />
+                    34. Salon chăm sóc xe hơi<br />
+                    35. Trường Mầm non quốc tế<br />
+                    36. Trường THCS quốc tế<br />
+                    37. Trung tâm tổ chức sự kiện<br />
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<partial name="_Preloading" />

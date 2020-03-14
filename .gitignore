@@ -1,0 +1,14 @@
+
+.config/
+
+node_modules/
+
+obj/
+
+.vs/
+
+bin/
+
+wwwroot/dist/
+
+wwwroot/lib/

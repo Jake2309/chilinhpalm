@@ -1,0 +1,228 @@
+﻿
+#section-short-content-middle .content-block {
+    top: 5%;
+}
+
+#section-short-content-bottom .content-block {
+    top: 5%;
+}
+
+    #section-header-image .text-header-contain {
+        top: 50%;
+    }
+
+#section-header-image {
+    background: url('/images/header-detail.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+    #section-header-image .header-text-center {
+        text-shadow: 1px 4px 5px #0c0b0b;
+    }
+
+    #section-detail-gallery {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #section-detail-gallery img {
+        max-height: 100%;
+        max-width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .font-title {
+        font-size: 30px;
+    }
+
+.top-block{
+    position: absolute;
+    top: 10%;
+}
+
+.content-block{
+    position: absolute;
+    top:33.333%;
+    height: 80%;
+}
+
+.height-250{
+    height: 250px;
+}
+
+.height-600 {
+    height: 600px;
+}
+    .height-600 .img-contain {
+        height: 100%;
+    }
+
+.height-800{
+    height: 800px;
+}
+
+    .img-contain, .height-800 .img-contain {
+        height: 80%;
+    }
+
+.btn-detail {
+    font-size: 1.2rem !important;
+    width: 180px;
+    height: 50px;
+    padding: 1.3rem 1rem;
+    border: solid 1px #707070;
+}
+
+@media (min-width: 1920px) {
+    .top-block-content {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .mobile-content-hide {
+        display: none;
+    }
+}
+
+@media (min-width: 1366px) {
+    .top-block-content {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .mobile-content-hide {
+        display: none;
+    }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    .top-block-content {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .mobile-content-hide {
+        display: none;
+    }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .top-block-content {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .mobile-content-hide {
+        display: none;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .top-block-content {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .mobile-content-hide {
+        display: none;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .top-block-content {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .top-block-title {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .desktop-hide {
+        display: none;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .top-block {
+        top: 5% !important;
+    }
+
+    .top-block-title {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .top-block-content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .desktop-hide {
+        display: none;
+    }
+
+    #section-short-content-middle .content-block {
+        top: 20% !important;
+    }
+
+    #section-short-content-bottom .content-block {
+        top: 10% !important;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .top-block {
+        top: 5% !important;
+    }
+
+    .desktop-hide{
+        display: none;
+    }
+
+    #section-short-content-middle .content-block {
+        top: 20% !important;
+    }
+
+    #section-short-content-bottom .content-block {
+        top: 10% !important;
+    }
+}

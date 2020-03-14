@@ -1,0 +1,232 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\glide.core.css" />
+    <Content Remove="wwwroot\css\glide.theme.min.css" />
+    <Content Remove="wwwroot\images\home.jpg" />
+    <Content Remove="wwwroot\images\intro.jpeg" />
+    <Content Remove="wwwroot\images\projects.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="src\css\carousel.css" />
+    <None Remove="src\css\glide.core.css" />
+    <None Remove="src\css\glide.theme.min.css" />
+    <None Remove="src\css\slick-theme.css" />
+    <None Remove="src\css\slick.css" />
+    <None Remove="src\img\background-menu.jpg" />
+    <None Remove="src\img\be-boi-2.jpeg" />
+    <None Remove="src\img\be-boi.jpeg" />
+    <None Remove="src\img\be-boi11.jpg" />
+    <None Remove="src\img\biet-thu.jpg" />
+    <None Remove="src\img\cafe.jpg" />
+    <None Remove="src\img\contact-background.jpg" />
+    <None Remove="src\img\contact.jpg" />
+    <None Remove="src\img\default-map.jpg" />
+    <None Remove="src\img\detail-small.jpg" />
+    <None Remove="src\img\dich-vu-tien-ich-dong-bo.jpg" />
+    <None Remove="src\img\giao-thong-thuan-tien-square.jpg" />
+    <None Remove="src\img\giao-thong-thuan-tien.jpg" />
+    <None Remove="src\img\gradient-background.png" />
+    <None Remove="src\img\header-detail.jpg" />
+    <None Remove="src\img\header-logo.svg" />
+    <None Remove="src\img\icon-language-black.svg" />
+    <None Remove="src\img\icon-language-white.svg" />
+    <None Remove="src\img\intro.jpg" />
+    <None Remove="src\img\khach-san.jpeg" />
+    <None Remove="src\img\khach-san.jpg" />
+    <None Remove="src\img\la-cay.jpg" />
+    <None Remove="src\img\language.png" />
+    <None Remove="src\img\lavila.jpg" />
+    <None Remove="src\img\loading-image.jpg" />
+    <None Remove="src\img\logo-01.svg" />
+    <None Remove="src\img\Logo_white.svg" />
+    <None Remove="src\img\nha-phan-lo.jpg" />
+    <None Remove="src\img\nha-pho.jpeg" />
+    <None Remove="src\img\noi-sinh-song-an-lanh-square.jpg" />
+    <None Remove="src\img\noi-sinh-song-an-lanh.jpg" />
+    <None Remove="src\img\palm-logo.png" />
+    <None Remove="src\img\test-video.mp4" />
+    <None Remove="src\img\tiem-nang-dau-tu.jpg" />
+    <None Remove="src\img\tiemnangdautu.jpg" />
+    <None Remove="src\img\tien-ich-square.jpg" />
+    <None Remove="src\img\truong-hoc.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="src\img\background-menu.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\be-boi-2.jpeg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\be-boi.jpeg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\be-boi11.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\biet-thu.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\cafe.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\contact-background.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\contact.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\default-map.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\detail-small.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\dich-vu-tien-ich-dong-bo.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\giao-thong-thuan-tien-square.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\giao-thong-thuan-tien.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\gradient-background.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\header-detail.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\header-logo.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\icon-language-black.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\icon-language-white.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\intro.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\khach-san.jpeg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\khach-san.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\la-cay.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\language.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\lavila.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\loading-image.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\logo-01.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\Logo_white.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\nha-phan-lo.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\nha-pho.jpeg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\noi-sinh-song-an-lanh-square.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\noi-sinh-song-an-lanh.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\palm-logo.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\test-video.mp4">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\tiem-nang-dau-tu.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\tiemnangdautu.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\tien-ich-square.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="src\img\truong-hoc.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+    <PackageReference Include="MySql.Data" Version="8.0.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\components\" />
+    <Folder Include="src\lib\" />
+    <Folder Include="wwwroot\dist\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\glide.core.css" />
+    <None Include="wwwroot\css\glide.theme.min.css" />
+    <None Include="wwwroot\images\home.jpg" />
+    <None Include="wwwroot\images\intro.jpeg" />
+    <None Include="wwwroot\images\projects.jpeg" />
+  </ItemGroup>
+
+</Project>
