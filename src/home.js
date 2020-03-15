@@ -1,6 +1,5 @@
 ﻿import 'slick-carousel'
 import fullpage from 'fullpage.js'
-import { transformFromAst } from 'babel-core';
 
 class HomeManager {
     constructor({ root }) {
@@ -29,54 +28,116 @@ class HomeManager {
 
         var self = this;
 
-        var fullPageInstance = new fullpage('#fullpage', {
-            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-            navigation: true,
-            css3: true,
-            anchors: ['home', 'intro', 'location', 'project', 'gallery', 'contact'],
-            menu: '#menu',
-            navigationTooltips: ['TRANG CHỦ', 'GIỚI THIỆU', 'VỊ TRÍ', 'DỰ ÁN', 'THƯ VIỆN', 'LIÊN HỆ'],
-            showActiveTooltip: true,
-            verticalCentered: false,
-            afterLoad: function (origin, destination, direction) {
-                switch (destination.anchor) {
-                    case "home":
-                        $('html').addClass('dd-light-theme');
-                        self.$svgImage.css({ fill: "#fff" })
-                        self.activeMenu(0);
-                        break;
-                    case "intro":
-                        $('html').removeClass('dd-dark-theme').addClass('dd-light-theme');
-                        self.$svgImage.css({ fill: "#fff" })
-                        self.activeMenu(1);
-                        break;
-                    case "location":
-                        $('html').removeClass('dd-light-theme').addClass('dd-dark-theme');
-                        self.$svgImage.css({ fill: "#000" })
-                        self.activeMenu(2);
-                        break;
-                    case "project":
-                        self.$svgImage.css({ fill: "#000" })
-                        self.activeMenu(3);
-                        break;
-                    case "gallery":
-                        $('html').removeClass('dd-light-theme').addClass('dd-dark-theme');
-                        self.$svgImage.css({ fill: "#000" })
-                        self.activeMenu(4);
-                        break;
-                    case "contact":
-                        $('html').removeClass('dd-dark-theme').addClass('dd-light-theme');
-                        self.$svgImage.css({ fill: "#fff" })
-                        self.activeMenu(5);
-                        break;
+        if (self.isMobileBrowser()) {
+            
+            let fullPageInstance = new fullpage('#fullpage', {
+                licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                navigation: false,
+                css3: true,
+                anchors: ['home', 'intro', 'location', 'project', 'gallery', 'contact'],
+                menu: '#menu',
+                navigationTooltips: ['TRANG CHỦ', 'GIỚI THIỆU', 'VỊ TRÍ', 'DỰ ÁN', 'THƯ VIỆN', 'LIÊN HỆ'],
+                showActiveTooltip: false,
+                verticalCentered: false,
+                slidesNavigation: true,
+                controlArrows: false,
+                afterLoad: function (origin, destination, direction) {
+                    switch (destination.anchor) {
+                        case "home":
+                            $('html').addClass('dd-light-theme');
+                            self.$svgImage.css({ fill: "#fff" })
+                            self.activeMenu(0);
+                            break;
+                        case "intro":
+                            $('html').removeClass('dd-dark-theme').addClass('dd-light-theme');
+                            self.$svgImage.css({ fill: "#fff" })
+                            self.activeMenu(1);
+
+                            $('.fp-slidesNav').addClass('text-center')
+
+                            break;
+                        case "location":
+                            $('html').removeClass('dd-light-theme').addClass('dd-dark-theme');
+                            self.$svgImage.css({ fill: "#000" })
+                            self.activeMenu(2);
+                            break;
+                        case "project":
+                            self.$svgImage.css({ fill: "#000" })
+                            self.activeMenu(3)
+
+                            $('.fp-slidesNav').addClass('text-center')
+
+                            break;
+                        case "gallery":
+                            $('html').removeClass('dd-light-theme').addClass('dd-dark-theme');
+                            self.$svgImage.css({ fill: "#000" })
+                            self.activeMenu(4);
+                            break;
+                        case "contact":
+                            $('html').removeClass('dd-dark-theme').addClass('dd-light-theme');
+                            self.$svgImage.css({ fill: "#fff" })
+                            self.activeMenu(5);
+
+                            $('#section-contact').addClass('d-flex align-items-center')
+                            break;
+                    }
+                },
+                onLeave: function (origin, destination, direction) {
+                    if (destination.index != 2) {
+                        $('#more-info').prop('hidden', true)
+                    }
                 }
-            },
-            onLeave: function (origin, destination, direction) {
-                if (destination.index != 2) {
-                    $('#more-info').prop('hidden', true)
+            })
+        } else {
+            let fullPageInstance = new fullpage('#fullpage', {
+                licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                navigation: true,
+                css3: true,
+                anchors: ['home', 'intro', 'location', 'project', 'gallery', 'contact'],
+                menu: '#menu',
+                navigationTooltips: ['TRANG CHỦ', 'GIỚI THIỆU', 'VỊ TRÍ', 'DỰ ÁN', 'THƯ VIỆN', 'LIÊN HỆ'],
+                showActiveTooltip: true,
+                verticalCentered: false,
+                afterLoad: function (origin, destination, direction) {
+                    switch (destination.anchor) {
+                        case "home":
+                            $('html').addClass('dd-light-theme');
+                            self.$svgImage.css({ fill: "#fff" })
+                            self.activeMenu(0);
+                            break;
+                        case "intro":
+                            $('html').removeClass('dd-dark-theme').addClass('dd-light-theme');
+                            self.$svgImage.css({ fill: "#fff" })
+                            self.activeMenu(1);
+                            break;
+                        case "location":
+                            $('html').removeClass('dd-light-theme').addClass('dd-dark-theme');
+                            self.$svgImage.css({ fill: "#000" })
+                            self.activeMenu(2);
+                            break;
+                        case "project":
+                            self.$svgImage.css({ fill: "#000" })
+                            self.activeMenu(3);
+                            break;
+                        case "gallery":
+                            $('html').removeClass('dd-light-theme').addClass('dd-dark-theme');
+                            self.$svgImage.css({ fill: "#000" })
+                            self.activeMenu(4);
+                            break;
+                        case "contact":
+                            $('html').removeClass('dd-dark-theme').addClass('dd-light-theme');
+                            self.$svgImage.css({ fill: "#fff" })
+                            self.activeMenu(5);
+                            break;
+                    }
+                },
+                onLeave: function (origin, destination, direction) {
+                    if (destination.index != 2) {
+                        $('#more-info').prop('hidden', true)
+                    }
                 }
-            }
-        });
+            })
+        }
 
         $('.slick-contain').slick({
             centerMode: true,
@@ -131,17 +192,15 @@ class HomeManager {
         this.showTabProject();
         this.tabLocation();
         this.backToTop();
-        this.isMobileBrowser();
+        
     }
 
     isMobileBrowser() {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            //self.fullPageInstance.fullpage({ slidesNavigation: true})
-            return true
+            return true;
         }
 
-        //self.fullPageInstance.fullpage({ slidesNavigation: false })
-        return false
+        return false;
     }
 
     activeMenu(i) {

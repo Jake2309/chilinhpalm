@@ -1,9 +1,14 @@
 ﻿import 'slick-carousel'
 import fullpage from 'fullpage.js'
+import UltilMng from './ultils'
 
 class DetailMng {
     constructor({ root }) {
         this.$root = $(root)
+        let self = this
+
+        this.ultils = new UltilMng()
+        let isMobileBrowser = this.ultils.isMobileBrowser()
 
         this.$introGeneral = $('#link-general-intro', this.$root)
         this.$introCompany = $('#link-company-intro', this.$root)
@@ -35,61 +40,61 @@ class DetailMng {
                 break;
         }
 
-        let self = this
-
         var fullPageDetailInstance = new fullpage('#detail', {
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
             navigation: false,
             autoScrolling: false,
-            css3: false,
+            css3: true,
             menu: '#menu',
             showActiveTooltip: false,
             verticalCentered: false,
             onLeave: function (origin, destination, direction) {
                 let $sectionId = '';
 
-                switch (destination.index) {
-                    case 0:
-                        $sectionId = '#section-header-image'
+                if (!isMobileBrowser) {
+                    switch (destination.index) {
+                        case 0:
+                            $sectionId = '#section-header-image'
 
-                        $($sectionId + ' .text-top').removeClass('animated fadeInDown')
-                        $($sectionId + ' .text-contain').removeClass('animated fadeInRight')
-                        $($sectionId + ' .img-contain').removeClass('animated fadeInUp')
-                        break;
-                    case 1:
-                        $sectionId = '#section-short-content'
+                            $($sectionId + ' .text-top').removeClass('animated fadeInDown')
+                            $($sectionId + ' .text-contain').removeClass('animated fadeInRight')
+                            $($sectionId + ' .img-contain').removeClass('animated fadeInUp')
+                            break;
+                        case 1:
+                            $sectionId = '#section-short-content'
 
-                        $($sectionId + ' .text-top').addClass('animated fadeInDown')
-                        $($sectionId + ' .text-contain').addClass('animated fadeInLeft')
-                        $($sectionId + ' .img-contain').addClass('animated fadeInUp')
-                        break;
-                    case 2:
-                        $($sectionId + ' .text-top').removeClass('animated fadeInDown')
-                        $($sectionId + ' .text-contain').removeClass('animated fadeInRight')
-                        $($sectionId + ' .img-contain').removeClass('animated fadeInUp')
+                            $($sectionId + ' .text-top').addClass('animated fadeInDown')
+                            $($sectionId + ' .text-contain').addClass('animated fadeInLeft')
+                            $($sectionId + ' .img-contain').addClass('animated fadeInUp')
+                            break;
+                        case 2:
+                            $($sectionId + ' .text-top').removeClass('animated fadeInDown')
+                            $($sectionId + ' .text-contain').removeClass('animated fadeInRight')
+                            $($sectionId + ' .img-contain').removeClass('animated fadeInUp')
 
-                        $sectionId = '#section-short-content-middle'
+                            $sectionId = '#section-short-content-middle'
 
-                        $($sectionId + ' .text-contain').addClass('animated fadeInRight')
-                        $($sectionId + ' .img-contain').addClass('animated fadeInUp')
-                        break;
-                    case 3:
-                        $($sectionId + ' .text-top').removeClass('animated fadeInDown')
-                        $($sectionId + ' .text-contain').removeClass('animated fadeInLeft')
-                        $($sectionId + ' .img-contain').removeClass('animated fadeInUp')
+                            $($sectionId + ' .text-contain').addClass('animated fadeInRight')
+                            $($sectionId + ' .img-contain').addClass('animated fadeInUp')
+                            break;
+                        case 3:
+                            $($sectionId + ' .text-top').removeClass('animated fadeInDown')
+                            $($sectionId + ' .text-contain').removeClass('animated fadeInLeft')
+                            $($sectionId + ' .img-contain').removeClass('animated fadeInUp')
 
-                        $sectionId = '#section-short-content-bottom'
+                            $sectionId = '#section-short-content-bottom'
 
-                        $($sectionId + ' .text-contain').addClass('animated fadeInLeft')
-                        $($sectionId + ' .img-contain').addClass('animated fadeInUp')
-                        break;
-                    case 4:
-                        $($sectionId + ' .text-top').removeClass('animated fadeInDown')
-                        $($sectionId + ' .text-contain').removeClass('animated fadeInLeft')
-                        $($sectionId + ' .img-contain').removeClass('animated fadeInUp')
+                            $($sectionId + ' .text-contain').addClass('animated fadeInLeft')
+                            $($sectionId + ' .img-contain').addClass('animated fadeInUp')
+                            break;
+                        case 4:
+                            $($sectionId + ' .text-top').removeClass('animated fadeInDown')
+                            $($sectionId + ' .text-contain').removeClass('animated fadeInLeft')
+                            $($sectionId + ' .img-contain').removeClass('animated fadeInUp')
 
-                        $sectionId = '#section-detail-gallery'
-                        break;
+                            $sectionId = '#section-detail-gallery'
+                            break;
+                    }
                 }
             }
         })
@@ -104,6 +109,7 @@ class DetailMng {
             dots: true,
             infinite: true,
             touchMove: true,
+            mobileFirst: true,
             nextArrow: '<button type="button" class="slick-next">Next</button>',
             prevArrow: '<button type="button" class="slick-prev">Previous</button>',
             responsive: [
@@ -113,7 +119,25 @@ class DetailMng {
                         arrows: false,
                         centerMode: true,
                         centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 320,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0',
                         slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 381,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0',
+                        slidesToShow: 2
                     }
                 },
                 {
@@ -121,18 +145,24 @@ class DetailMng {
                     settings: {
                         arrows: false,
                         centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
+                        centerPadding: '0',
+                        slidesToShow: 3
                     }
                 }
             ]
+        });
+
+        console.log($('.slick-contain')[1].slick)
+        $('.slick-contain').on('breakpoint', function (event, slick, breakpoint) {
+            console.log('breakpoint ' + breakpoint);
         });
 
         $('#slider label').on('click', function () {
             $(this).is('checked')
         })
 
-        this.backToTop()
+        if (!isMobileBrowser)
+            self.ultils.backToTop(self.$btnBackToTop)
     }
 
     activeMenu(i) {
@@ -154,14 +184,6 @@ class DetailMng {
 
         var items = self.$projectNav.find('a');
         items.eq(i).addClass('active').siblings().removeClass('active');
-    }
-
-    backToTop() {
-        let self = this
-
-        self.$btnBackToTop.on('click', () => {
-            fullpage_api.moveTo(1)
-        })
     }
 
     menuButtonEventHandler() {

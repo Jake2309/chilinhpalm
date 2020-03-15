@@ -41,7 +41,7 @@ class NewsDetailMng {
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
             navigation: false,
             autoScrolling: false,
-            css3: false,
+            css3: true,
             menu: '#menu',
             showActiveTooltip: false,
             verticalCentered: false,

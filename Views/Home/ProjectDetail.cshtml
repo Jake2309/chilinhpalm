@@ -1,6 +1,6 @@
 ﻿@model DetailModel
 @{
-    ViewData["Title"] = "ProjectDetail";
+    
 }
 @section Scripts{
     <script src="~/dist/project-detail.bundler.js"></script>
@@ -27,7 +27,7 @@
             <div class="row col-12 mt-5 content-block desktop-hide">
                 <div class="col-5 text-contain offset-sm-1" style="margin-top:5%">
                     <div class="row col-12">
-                        <div class="col-10 offset-sm-2 text-left mt-5">
+                        <div class="col-10 offset-sm-2 text-left">
                             <h1 class="text-uppercase font-title">GIAO THÔNG THUẬN TIỆN</h1>
                         </div>
                         <div class="col-10 offset-sm-2 text-left mt-5">
@@ -53,7 +53,7 @@
                 </div>
                 <div class="col-12 text-contain">
                     <div class="row col-12">
-                        <div class="col-12 text-center mt-5">
+                        <div class="col-12 text-center">
                             <h1 class="text-uppercase font-title">GIAO THÔNG THUẬN TIỆN</h1>
                         </div>
                         <div class="col-12 text-center mt-5">
@@ -81,7 +81,7 @@
                 </div>
                 <div class="col-5 text-contain" style="margin-top:5%">
                     <div class="row col-12">
-                        <div class="col-10 offset-sm-1 text-left mt-5">
+                        <div class="col-10 offset-sm-1 text-left">
                             <h1 class="text-uppercase font-title">DỊCH VỤ - TIỆN ÍCH ĐỒNG BỘ</h1>
                         </div>
                         <div class="col-10 offset-sm-1 text-left mt-5">
@@ -104,7 +104,7 @@
                 </div>
                 <div class="col-12 text-contain">
                     <div class="row col-12">
-                        <div class="col-12 text-center mt-5">
+                        <div class="col-12 text-center">
                             <h1 class="text-uppercase font-title">DỊCH VỤ - TIỆN ÍCH ĐỒNG BỘ</h1>
                         </div>
                         <div class="col-12 text-center mt-5">
@@ -128,7 +128,7 @@
             <div class="row col-12 mt-5 content-block desktop-hide">
                 <div class="col-5 text-contain offset-sm-1" style="margin-top:5%">
                     <div class="row col-12">
-                        <div class="col-10 offset-sm-2 text-left mt-5">
+                        <div class="col-10 offset-sm-2 text-left">
                             <h1 class="text-uppercase font-title">NƠI SINH SỐNG AN LÀNH</h1>
                         </div>
                         <div class="col-10 offset-sm-2 text-left mt-5">
@@ -154,7 +154,7 @@
                 </div>
                 <div class="col-12 text-contain">
                     <div class="row col-12">
-                        <div class="col-12 text-center mt-5">
+                        <div class="col-12 text-center">
                             <h1 class="text-uppercase font-title">NƠI SINH SỐNG AN LÀNH</h1>
                         </div>
                         <div class="col-12 text-center mt-5">
@@ -174,7 +174,7 @@
         </div>
     </div>
     <div class="section fp-auto-height" id="section-detail-gallery">
-        <div class="height-600">
+        <div class="height-600 cl-mobile-hide">
             <div class="col-12 slick-contain center slider" style="height: 100%">
                 <div id="slide-1">
                     <img src="~/images/dich-vu-tien-ich-dong-bo.jpg" />
@@ -190,9 +190,25 @@
                 </div>
             </div>
         </div>
+        <div class="height-400 cl-desktop-hide">
+            <div class="col-12 slick-contain center slider" style="height: 100%">
+                <div id="slide-1">
+                    <img src="~/images/dich-vu-tien-ich-dong-bo-381.jpg" />
+                </div>
+                <div id="slide-3">
+                    <img src="~/images/noi-sinh-song-an-lanh.jpg" />
+                </div>
+                <div id="slide-2">
+                    <img src="~/images/biet-thu.jpg" />
+                </div>
+                <div id="slide-4">
+                    <img src="~/images/tiem-nang-dau-tu.jpg" />
+                </div>
+            </div>
+        </div>
     </div>
     <partial name="_Contact" />
-    <div class="row col-12 text-right back-to-top justify-content-end btn-back-to-top">
+    <div class="row col-12 text-right back-to-top justify-content-end btn-back-to-top cl-mobile-hide">
         <a class="btn" id="btnBackTop"> <i class="fas fa-arrow-circle-up fa-3x text-white"></i></a>
     </div>
 </div>
