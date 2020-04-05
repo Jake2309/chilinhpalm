@@ -128,24 +128,20 @@
         </div>
     </div>
     <div class="section" id="section-map-location">
-        <div class="row h-100 align-items-center">
-            <img src="~/images/default-map.jpg" />
-        </div>
-        <div class="row col-12 map-menu-contain">
-            <div class="col-4 mobile-map-menu" style="z-index:6">
-                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="hospital" href="#">BỆNH VIỆN</a></div>
-                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="school" href="#">TRƯỜNG HỌC</a></div>
-                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="parking" href="#">BÃI ĐỖ XE</a></div>
-                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="stadium" href="#">SÂN VẬN ĐỘNG</a></div>
-                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="public" href="#">CÔNG TRÌNH CÔNG CỘNG</a></div>
-                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="culture" href="#">CÔNG TRÌNH VĂN HÓA</a></div>
-                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="hotel" href="#">KHÁCH SẠN</a></div>
-                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="park" href="#">CÔNG VIÊN CÂY XANH</a></div>
-                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="land" href="#">ĐẤT PHÂN LÔ</a></div>
-                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="shop-house" href="#">SHOP HOUSE</a></div>
-                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="services" href="#">DỊCH VỤ</a></div>
-                <div class="col-sm"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="coffee" href="#">COFFEE</a></div>
+        <div class="map-scroll-contain cl-desktop-hide">
+            <div class="map-vertical-scroll">
+                <div class="row h-100 align-items-center scrollable-content">
+                    <img src="~/images/default-map-1200.jpg" />
+                </div>
             </div>
+        </div>
+        <div class="row h-100 align-items-center scrollable-content cl-mobile-hide">
+            <img src="~/images/default-map-1200.jpg" />
+        </div>
+        <div id="btn-animation" class="col-12 align-items-center cl-desktop-hide">
+            <a class="btn btn-sm btn-outline-success" id="btn-more-info">Thêm thông tin</a>
+        </div>
+        <div class="row col-12 map-menu-contain cl-mobile-hide">
             <div class="col-2 desktop-map-menu" id="project-menu" style="z-index:6; left: 5%">
                 <div class="card">
                     <ul class="list-group list-group-flush">
@@ -167,6 +163,25 @@
             <div id="btn-animation" class="col-4 d-flex align-items-center">
                 <a class="btn btn-lg" id="btn-more-info"><i class="fas fa-chevron-right fa-2x"></i></a>
             </div>
+        </div>
+        <div class="row col-12 map-menu-contain cl-desktop-hide">
+            <div class="row mobile-map-menu" style="z-index:6">
+                <div class="col-4"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="hospital" href="#">BỆNH VIỆN</a></div>
+                <div class="col-4"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="school" href="#">TRƯỜNG HỌC</a></div>
+                <div class="col-4"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="parking" href="#">BÃI ĐỖ XE</a></div>
+                <div class="col-4"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="stadium" href="#">SÂN VẬN ĐỘNG</a></div>
+                <div class="col-4"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="public" href="#">CÔNG TRÌNH CÔNG CỘNG</a></div>
+                <div class="col-4"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="culture" href="#">CÔNG TRÌNH VĂN HÓA</a></div>
+                <div class="col-4"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="hotel" href="#">KHÁCH SẠN</a></div>
+                <div class="col-4"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="park" href="#">CÔNG VIÊN CÂY XANH</a></div>
+                <div class="col-4"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="land" href="#">ĐẤT PHÂN LÔ</a></div>
+                <div class="col-4"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="shop-house" href="#">SHOP HOUSE</a></div>
+                <div class="col-4"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="services" href="#">DỊCH VỤ</a></div>
+                <div class="col-4"><a class="label text-dark text-left text-uppercase w-100 js-location-menu" data-type="coffee" href="#">COFFEE</a></div>
+            </div>
+            @*<div id="btn-animation" class="col-4 d-flex align-items-center">
+                
+            </div>*@
         </div>
     </div>
     <div class="section" id="section-project">

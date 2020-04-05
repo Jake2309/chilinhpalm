@@ -41,7 +41,10 @@ class HomeManager {
                 verticalCentered: false,
                 slidesNavigation: true,
                 controlArrows: false,
+                //scrollOverflow: true,
+                //responsiveWidth: 1200,
                 afterLoad: function (origin, destination, direction) {
+
                     switch (destination.anchor) {
                         case "home":
                             $('html').addClass('dd-light-theme');
@@ -60,6 +63,11 @@ class HomeManager {
                             $('html').removeClass('dd-light-theme').addClass('dd-dark-theme');
                             self.$svgImage.css({ fill: "#000" })
                             self.activeMenu(2);
+
+                            //fullPageInstance.responsiveWidth = 1200;
+                            //fullPageInstance.setAutoScrolling(true)
+                            //fullPageInstance.setRe(true)
+                            //console.log(fullPageInstance)
                             break;
                         case "project":
                             self.$svgImage.css({ fill: "#000" })
@@ -86,6 +94,9 @@ class HomeManager {
                     if (destination.index != 2) {
                         $('#more-info').prop('hidden', true)
                     }
+                },
+                afterRender: function () {
+                    fullPageInstance.scrollOverflow = true
                 }
             })
         } else {

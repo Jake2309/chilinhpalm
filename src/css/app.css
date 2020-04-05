@@ -626,12 +626,14 @@ img {
 
     .map-menu-contain {
         position: absolute;
-        top: 40%;
+        bottom: 20px;
+        left: 10px;
+        right: 10px;
     }
 
     #more-info .card-body {
         max-height: 450px;
-        overflow-y: auto;
+        overflow: scroll;
     }
 
     #section-project .nav-custom a {
@@ -665,6 +667,55 @@ img {
 
     .cl-mobile-hide {
         display: none;
+    }
+
+    #btn-more-info{
+        margin-left:43%;
+    }
+
+    #btn-animation{
+        position: absolute;
+        top: 15%;
+        z-index:6;
+    }
+
+    .scrollable-content {
+        /*width: 1200px;
+        overflow-y: scroll;
+        margin-left: -280px;
+        z-index: 4;*/
+        width: 1395.83px;
+        height: 750px;
+        margin-left: -697.915px;
+        margin-top: -375px;
+        position: relative;
+        z-index: 5;
+        left: 50% !important;
+        top: 50% !important;
+    }
+
+    .map-vertical-scroll .scrollable-content img{
+        display: block;
+    }
+
+    #section-map-location {
+        overflow-y: scroll;
+    }
+
+    .map-scroll-contain {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .map-vertical-scroll {
+        padding-top: 0;
+        padding-bottom: 0;
+        overflow: hidden;
+        height: 100% !important;
     }
 }
 

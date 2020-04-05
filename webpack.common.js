@@ -7,6 +7,7 @@ module.exports = {
         'project-detail': ['./src/project-detail.js', './src/css/project-detail.css'],
         'news-detail': ['./src/news-detail.js', './src/css/news-detail.css'],
         'home': ['./src/home.js'],
+        'scroll-over-flow': ['./src/scrolloverflow.js'],
     },
     output: {
         filename: '[name].bundler.js',
