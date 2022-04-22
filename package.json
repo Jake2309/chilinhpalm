@@ -35,7 +35,7 @@
     "bootstrap": "^4.4.1",
     "css-loader": "^3.4.2",
     "file-loader": "^5.0.2",
-    "fullpage.js": "^3.0.8",
+    "fullpage.js": "^4.0.5",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.1",
     "popper.js": "^1.16.1",
